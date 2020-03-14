@@ -1,0 +1,19 @@
+# ignore
+# eclipse project file
+.setting/
+.classpath
+.project
+**/target/
+*.class
+*.war
+**/.classpath
+**/.project
+**/.setting
+**/bin/**
+**/out/**
+**/out/
+/build/
+/bin/
+.idea/
+.iml
+wrapper/
