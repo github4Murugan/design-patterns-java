@@ -1,6 +1,3 @@
-/**
- * 
- */
 package design.pattern.singleton;
 
 /**
@@ -13,12 +10,14 @@ package design.pattern.singleton;
  * 
  */
 public class SingletonEagerInitialization {
-
-	private static SingletonEagerInitialization instance = new SingletonEagerInitialization();
+	String name;
+	int age;
+	private static SingletonEagerInitialization instance = new SingletonEagerInitialization("MyName", 33);
 
 	// Private Constructor
-	private SingletonEagerInitialization() {
-
+	private SingletonEagerInitialization(String name, int age) {
+		this.name = name;
+		age = this.age;
 	}
 
 	public static SingletonEagerInitialization getInstance() {
