@@ -5,23 +5,19 @@ public class TransactionProcessorFactory {
 	public static TransactionProcessor getProcessor(String walletType) {
 		TransactionProcessor transactionProcessor = null;
 
-		switch (WalletType.getType1(walletType)) {
+		switch (WalletType.getWallettype(walletType)) {
 		case APPLE:
 			transactionProcessor = new AppleProcessor();
 			break;
-
 		case SAMSUNG:
-			transactionProcessor = new GoogleProcessor();
-			break;
-
-		case GOOGLE:
 			transactionProcessor = new SamsungProcessor();
 			break;
-
+		case GOOGLE:
+			transactionProcessor = new GoogleProcessor();
+			break;
 		case CLOUD:
 			transactionProcessor = new CloudProcessor();
 			break;
-
 		default:
 			break;
 		}

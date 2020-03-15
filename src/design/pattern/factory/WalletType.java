@@ -14,7 +14,7 @@ public enum WalletType {
 		return type;
 	}
 	
-	public static WalletType getType1(String str) {
+	public static WalletType getWallettype(String str) {
 		if(str.equalsIgnoreCase(WalletType.APPLE.toString())) {
 			return WalletType.APPLE;
 		}
